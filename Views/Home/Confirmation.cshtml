@@ -1,0 +1,15 @@
+﻿@model IPN;
+
+<div style="text-align: center">
+    <h2 style="color:green; margin-top: 50px;">Congratulations @Model.payerFirstName!</h2>
+    <div style="color:green; margin-top: 30px; font-size: 1em; align-items: center;">
+        <p style="line-height: 4em;">
+            Your $@Model.amount @Model.currency Paypal transaction was successful.
+        </p>
+        <p style="color: green;">Keep this transaction Id for future reference: 
+            <span style="color: black;">
+                @Model.paymentID
+            </span>
+        </p>
+    </div>
+</div>

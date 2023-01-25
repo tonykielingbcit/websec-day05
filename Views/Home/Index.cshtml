@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="@Url.Content("~/logo/deckofcards.png")"
+                 alt="Pack of Cards"
+                 style="max-width: 80%" />
+            <div class="d-flex justify-content-center "
+                 style="color:crimson; font-size: 1.5em;">
+                $<span id="itemPrice">@Model.Split('|')[0]</span>
+                <span style="">&nbsp;</span>
+                <span id="currency">@Model.Split('|')[1]</span>
+            </div>
+        </div>
+        <div class="col-sm-8 col-md-4" style="padding-top: 40px">
+            Are you looking for a fun and affordable way
+            to pass the time? Look no further than our
+            high-quality deck of cards! At only $3.55,
+            this deck of cards is an excellent value.
+            You won't find a better price anywhere else.
+        </div>
+        <div class="col-sm-4 d-none d-md-block"></div>
+        <hr style="margin: 1rem 0" />
+
+        @* paypal button *@
+        <div id="paypal-button">
+            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+            <script>
+                paypal.Button.render({
+                    env: 'sandbox', // Or ' production '
+                    style: { // You can customize your button here.
+                        size: 'small',
+                        color: 'gold',
+                        shape: 'pill',
+                        label: 'checkout'
+                    },
+                    client: {
+                        // You need to change this to your client ID
+                        sandbox: 'AXU9uk8wFGIj4ZNiHZo8WZPEpwpCrG3yCR_WTfTwRwVct1fM6EN8FzD25Bo8vd0r2eMGjfcKeoVP9IQr',
+                    },
+
+                    commit: true, // Show a 'Pay Now' button
+
+                    payment: function (data, actions) {
+                        return actions.payment.create({
+                            payment: {
+                                transactions: [{
+                                    // The 'custom' field helps you to link the paypal request
+                                    // with paypal's response which is important.
+
+                                    // You may want use a 'custom' field to send an accountID
+                                    // from your site so you can uniquely identify the person
+                                    // making the payment when Paypal notifies you.
+
+                                    // Sometimes a person at your site will pay at Paypal with
+                                    // an entirely different set of credentials. They may pay with
+                                    // a credit card or account which belongs to their spouse or
+                                    // another family member. In situations like these, relating
+                                    // payments to accounts on your site can be difficult.
+
+                                    // The custom property value that you send to Paypal for a
+                                    // payment request is returned in Paypal's reponse.
+                                    custom: 'Custom data goes here!',
+                                    amount: {
+                                        total:
+                                            document.getElementById("itemPrice").innerHTML
+                                        , currency:
+                                            document.getElementById("currency").innerHTML
+                                    }
+                                }]
+                            }
+                        });
+                    },
+                    onAuthorize: function (data, actions) {
+                        return actions.payment.execute().then(function (payment) {
+                            console.log("This is what comes back from Paypal: ")
+                            console.log(payment);
+                            //alert("This JSON is from Paypal: " + JSON.stringify(payment));
+                            console.log("-------------------------------------")
+                            var dataObject = {
+                                "cart": payment.cart,
+                                "intent": payment.intent,
+                                "paymentID": payment.id,
+                                "create_time": payment.create_time,
+                                "paymentState": payment.state,
+                                "payerEmail": payment.payer.payer_info.email,
+                                "payerID": payment.payer.payer_info.payer_id,
+                                "payerFirstName": payment.payer.payer_info.first_name,
+                                "payerLastName": payment.payer.payer_info.last_name,
+                                "payerMiddleName": payment.payer.payer_info.middle_name,
+                                "payerCountryCode": payment.payer.payer_info.country_code,
+                                "paymentMethod": payment.payer.payment_method,
+                                "payerStatus": payment.payer.status,
+                                "amount": payment.transactions[0].amount.total,
+                                "currency": payment.transactions[0].amount.currency,
+                                "custom": payment.transactions[0].custom
+                            }
+
+                            // The payment is complete!
+                            // You can now show a confirmation message to the customer
+                            $.ajax({
+                                type: "post",
+                                url: "/Home/PaySuccess",
+                                data: JSON.stringify(dataObject),
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+
+                                //after success
+                                success: function (msg) {
+                                    console.log("Data: " + JSON.stringify(data));
+                                    window.location.href
+                                        = "/Home/Confirmation?confirmationId=" + data.paymentID;
+                                },
+                                //after fail
+                                error: function (msg) {
+                                    alert("fail: " + JSON.stringify(msg));
+                                }
+                            });
+                        })
+                    },
+                    onCancel: function (data, actions) {
+                        /*
+                        * Buyer cancelled the payment
+                        */
+                    },
+                }, '#paypal-button');
+            </script>
+
+        </div>
+    </div>
+</div>

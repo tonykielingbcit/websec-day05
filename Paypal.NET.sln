@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paypal.NET", "Paypal.NET.csproj", "{091382C2-6A27-4D99-965D-0D0A10B522E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{091382C2-6A27-4D99-965D-0D0A10B522E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091382C2-6A27-4D99-965D-0D0A10B522E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091382C2-6A27-4D99-965D-0D0A10B522E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091382C2-6A27-4D99-965D-0D0A10B522E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85994EBA-EA8E-4928-9E56-F450337FE650}
+	EndGlobalSection
+EndGlobal
