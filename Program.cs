@@ -13,6 +13,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+var RecaptchaSiteKey = builder.Configuration["Recaptcha:SiteKey"];
+var RecaptchaSecretKey = builder.Configuration["Recaptcha:SecretKey"];
 
 var app = builder.Build();
 
