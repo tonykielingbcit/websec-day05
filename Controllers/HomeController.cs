@@ -73,22 +73,27 @@ namespace Paypal.NET.Controllers
         [Authorize]
         public IActionResult Confirmation(string confirmationId)
         {
-            IPN transaction = _context.IPNs.FirstOrDefault(t => t.paymentID == confirmationId);
+            // check whether there is real data coming,
+            // if not, it displays fake data below
+            if (confirmationId != null)
+            {
+                IPN transaction = _context.IPNs
+                                    .FirstOrDefault(t => t.paymentID == confirmationId);
 
-            return View("Confirmation", transaction);
+                return View("Confirmation", transaction);
+            }
 
-            ////this is temporary with hardcoded data
-            //var temp = new IPN
-            //{
-            //    //paymentID = "MPIH5HA4J269406WS7648845",
-            //    paymentID = confirmationId,
-            //    create_time = DateTime.Now.ToString("dd'/'MM'/'yyyy , HH:mm"),
-            //    payerFirstName = "Bob",
-            //    payerEmail = "bob@email.ca",
-            //    amount = "123.46",
-            //    paymentMethod = "paypal"
-            //};
-            //return View("Confirmation", temp);
+            //this is temporary with hardcoded data
+            var temp = new IPN
+            {
+                paymentID = "PAYID-MPIH5HA4J269406WS7648845",
+                create_time = DateTime.Now.ToString("dd'/'MM'/'yyyy , HH:mm"),
+                payerFirstName = "Tony Kieling",
+                amount = "123.46",
+                paymentMethod = "paypal"
+            };
+            ViewBag.temp = "flag is ON";
+            return View("Confirmation", temp);
         }
 
     }

@@ -7,9 +7,16 @@
             Your $@Model.amount @Model.currency Paypal transaction was successful.
         </p>
         <p style="color: green;">Keep this transaction Id for future reference: 
-            <span style="color: black;">
+            <span style="color: black; font-weight: bold">
                 @Model.paymentID
             </span>
         </p>
     </div>
 </div>
+<hr />
+
+@{ if (ViewBag.temp != null) {
+        <p>* this is a sample page with hardcoded data.</p>
+        <p>The system will display live data when perfoming a purchase.</p>
+    }
+}

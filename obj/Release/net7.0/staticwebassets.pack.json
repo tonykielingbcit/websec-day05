@@ -1,0 +1,293 @@
+{
+  "Files": [
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\Paypal.NET.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Paypal.NET.bundle.scp.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\css\\my-style.css",
+      "PackagePath": "staticwebassets\\css\\my-style.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\logo\\DeckMaster.png",
+      "PackagePath": "staticwebassets\\logo\\DeckMaster.png"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\logo\\DeckOfCards.png",
+      "PackagePath": "staticwebassets\\logo\\DeckOfCards.png"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\logo\\PayPal.png",
+      "PackagePath": "staticwebassets\\logo\\PayPal.png"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\sql.db",
+      "PackagePath": "staticwebassets\\sql.db"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\sql.db-shm",
+      "PackagePath": "staticwebassets\\sql.db-shm"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-03\\Paypal.NET\\wwwroot\\sql.db-wal",
+      "PackagePath": "staticwebassets\\sql.db-wal"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Paypal.NET.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Paypal.NET.props",
+      "PackagePath": "build\\Paypal.NET.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Paypal.NET.props",
+      "PackagePath": "buildMultiTargeting\\Paypal.NET.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Paypal.NET.props",
+      "PackagePath": "buildTransitive\\Paypal.NET.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
