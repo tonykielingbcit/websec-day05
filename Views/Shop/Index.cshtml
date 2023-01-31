@@ -1,0 +1,233 @@
+﻿@model IEnumerable<Paypal.NET.Models.Product>
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (var item in Model)
+{
+    <div class="p-3 row">
+        <div class="col-sm-3 d-flex justify-content-center flex-column">
+            <img src="@Url.Content($"~/logo/{item.Image}")"
+                 alt="Pack of Cards"
+                 style="object-fit: contain; max-height: 6rem" />
+            <div class="d-flex justify-content-center"
+                 style="color:crimson; font-size: 1.5em;">
+                $<span id="itemPrice">@item.Price</span>
+                <span style="">&nbsp;</span>
+                <span id="currency">@item.Currency</span>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            @Html.DisplayFor(modelItem => item.Description)
+        </div>
+
+        <div class="col-sm-3">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="d-flex flex-column align-items-center">
+                    <div class="w-50 d-flex flex-column">
+                        <button type="button" class="btn btn-success btn-sm w-100"
+                            id="@item.ID-add-@item.Price" onclick="updateShoppingCart(this)"
+                        >Add to cart</button>
+                        <button type="button" class="btn btn-danger btn-sm mt-1 w-100"
+                            id="@item.ID-subtr-@item.Price" onclick="updateShoppingCart(this)"
+                        >Remove from cart</button>
+                    </div>
+                    <div class="d-flex flex-column w-75 mt-2">
+                        <div class="row border-3 border-bottom">
+                            <div class="col-sm-5 text-center fw-bold p-1">Qty</div>
+                            <div class="col-sm-7 text-center fw-bold p-1">Amount</div>
+                        </div>
+                        <div class="row border-1 border-bottom">
+                            <div class="col-sm-5 text-center p-1" id="qtd-@item.ID">0</div>
+                            <div class="col-sm-7 text-center p-1" id="amt-@item.ID">0</div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+<div class="p-3 row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6"></div>
+    <div class="col-sm-3 d-flex flex-column align-items-center">
+        @* paypal button *@
+        <div id="paypal-button">
+            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+            <script>
+                paypal.Button.render({
+                    env: 'sandbox', // Or ' production '
+                    style: { // You can customize your button here.
+                        size: 'small',
+                        color: 'gold',
+                        shape: 'pill',
+                        label: 'checkout'
+                    },
+                    client: {
+                        // You need to change this to your client ID
+                        sandbox: 'AXU9uk8wFGIj4ZNiHZo8WZPEpwpCrG3yCR_WTfTwRwVct1fM6EN8FzD25Bo8vd0r2eMGjfcKeoVP9IQr',
+                    },
+
+                    commit: true, // Show a 'Pay Now' button
+
+                    payment: function (data, actions) {
+                        return actions.payment.create({
+                            payment: {
+                                transactions: [{
+                                    // The 'custom' field helps you to link the paypal request
+                                    // with paypal's response which is important.
+
+                                    // You may want use a 'custom' field to send an accountID
+                                    // from your site so you can uniquely identify the person
+                                    // making the payment when Paypal notifies you.
+
+                                    // Sometimes a person at your site will pay at Paypal with
+                                    // an entirely different set of credentials. They may pay with
+                                    // a credit card or account which belongs to their spouse or
+                                    // another family member. In situations like these, relating
+                                    // payments to accounts on your site can be difficult.
+
+                                    // The custom property value that you send to Paypal for a
+                                    // payment request is returned in Paypal's reponse.
+                                    custom: 'Custom data goes here!',
+                                    amount: {
+                                        total:
+                                            document.getElementById("itemPrice").innerHTML
+                                        , currency:
+                                            document.getElementById("currency").innerHTML
+                                    }
+                                }]
+                            }
+                        });
+                    },
+                    onAuthorize: function (data, actions) {
+                        return actions.payment.execute().then(function (payment) {
+                            console.log("This is what comes back from Paypal: ")
+                            console.log(payment);
+                            //alert("This JSON is from Paypal: " + JSON.stringify(payment));
+                            console.log("-------------------------------------")
+                            var dataObject = {
+                                "cart": payment.cart,
+                                "intent": payment.intent,
+                                "paymentID": payment.id,
+                                "create_time": payment.create_time,
+                                "paymentState": payment.state,
+                                "payerEmail": payment.payer.payer_info.email,
+                                "payerID": payment.payer.payer_info.payer_id,
+                                "payerFirstName": payment.payer.payer_info.first_name,
+                                "payerLastName": payment.payer.payer_info.last_name,
+                                "payerMiddleName": payment.payer.payer_info.middle_name,
+                                "payerCountryCode": payment.payer.payer_info.country_code,
+                                "paymentMethod": payment.payer.payment_method,
+                                "payerStatus": payment.payer.status,
+                                "amount": payment.transactions[0].amount.total,
+                                "currency": payment.transactions[0].amount.currency,
+                                "custom": payment.transactions[0].custom
+                            }
+
+                            // The payment is complete!
+                            // You can now show a confirmation message to the customer
+                            $.ajax({
+                                type: "post",
+                                url: "/Home/PaySuccess",
+                                data: JSON.stringify(dataObject),
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+
+                                //after success
+                                success: function (msg) {
+                                    console.log("Data: " + JSON.stringify(data));
+                                    window.location.href
+                                        = "/Home/Confirmation?confirmationId=" + data.paymentID;
+                                },
+                                //after fail
+                                error: function (msg) {
+                                    alert("fail: " + JSON.stringify(msg));
+                                }
+                            });
+                        })
+                    },
+                    onCancel: function (data, actions) {
+                        /*
+                        * Buyer cancelled the payment
+                        */
+                    },
+                }, '#paypal-button');
+            </script>
+
+        </div>
+        
+        <div class="d-flex flex-column w-75 mt-2">
+            <div class="row border-3 border-bottom">
+                <div class="col-sm-5 text-center fw-bold p-1">Items</div>
+                <div class="col-sm-7 text-center fw-bold p-1">Amount</div>
+            </div>
+            <div class="row border-1 border-bottom">
+                <div class="col-sm-5 text-center p-1" id="totalItems">0</div>
+                <div class="col-sm-7 text-center p-1" id="totalAmount">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div class="form-group d-flex justify-content-center mt-3">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">
+            <button class="btn btn-primary">Login to Purchase</button>
+        </a>
+    </div>
+}
+
+<script>
+    function updateShoppingCart(event) {
+        // incoming data
+        var data = event.id;
+        var prodId = data.split("-")[0];
+        var action = data.split("-")[1];
+        var price = data.split("-")[2];
+
+        // getting item element data
+        var qtdElem = $("#qtd-" + prodId);
+        var amtElem = $("#amt-" + prodId);
+        var currentQtd = parseInt(qtdElem.text());
+
+        var currentAmt = parseFloat(amtElem.text());
+        var qtdOperation = 0;
+        var amtOperation = 0;
+
+        // making the operation
+        if (action=="add") {
+            qtdOperation = 1;
+            amtOperation = parseFloat(price);
+        } else {
+            qtdOperation = -1;
+            amtOperation = parseFloat(price) * -1;
+            if ((currentQtd + qtdOperation) < 0)
+                return;
+        }
+
+        // writing new values for the product item 
+        qtdElem.text(currentQtd + qtdOperation);
+        amtElem.text((currentAmt + amtOperation).toFixed(2));
+
+        // handling total values
+        var totalQtdElem = $("#totalItems");
+        var totalAmtElem = $("#totalAmount");
+        var totalQtdElemValue = parseInt(totalQtdElem.text());
+        var totalAmtElemValue = totalAmtElem.text();
+
+        var totalQtd = totalQtdElemValue + qtdOperation
+        var totalAmt = parseFloat(totalAmtElemValue) + parseFloat(amtOperation);
+
+        totalQtdElem.text(totalQtd);
+        totalAmtElem.text(totalAmt.toFixed(2));
+    }
+</script>

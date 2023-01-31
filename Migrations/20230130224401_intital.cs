@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Paypal.NET.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class intital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -94,7 +94,7 @@ namespace Paypal.NET.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Product",
+                name: "Products",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "INTEGER", nullable: false)
@@ -107,7 +107,19 @@ namespace Paypal.NET.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Product", x => x.ID);
+                    table.PrimaryKey("PK_Products", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RoleVM",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "TEXT", nullable: false),
+                    RoleName = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoleVM", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -217,7 +229,7 @@ namespace Paypal.NET.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Product",
+                table: "Products",
                 columns: new[] { "ID", "Currency", "Description", "Image", "Price", "ProductName" },
                 values: new object[,]
                 {
@@ -289,7 +301,10 @@ namespace Paypal.NET.Migrations
                 name: "MyRegisteredUsers");
 
             migrationBuilder.DropTable(
-                name: "Product");
+                name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "RoleVM");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

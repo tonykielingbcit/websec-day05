@@ -334,7 +334,7 @@ namespace Paypal.NET.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
 
                     b.HasData(
                         new
@@ -364,6 +364,20 @@ namespace Paypal.NET.Migrations
                             Price = "7.79",
                             ProductName = "Black Deck"
                         });
+                });
+
+            modelBuilder.Entity("Paypal.NET.ViewModels.RoleVM", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RoleVM");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

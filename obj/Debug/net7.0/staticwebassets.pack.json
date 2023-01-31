@@ -249,12 +249,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\BlackDeck.jpeg",
+      "PackagePath": "staticwebassets\\logo\\BlackDeck.jpeg"
+    },
+    {
       "Id": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\DeckMaster.png",
       "PackagePath": "staticwebassets\\logo\\DeckMaster.png"
     },
     {
       "Id": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\DeckOfCards.png",
       "PackagePath": "staticwebassets\\logo\\DeckOfCards.png"
+    },
+    {
+      "Id": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\FiveAces.jpg",
+      "PackagePath": "staticwebassets\\logo\\FiveAces.jpg"
     },
     {
       "Id": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\PayPal.png",

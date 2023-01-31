@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/gM/7yg57x+hqoUjN/f0EqXzhEVshYkdOyZKbpl+OPk=",
+  "Hash": "tUwZm1IGsi/Qq7SS6s9eqlv6ni6dHx3vmo+cVisZaVQ=",
   "Source": "Paypal.NET",
   "BasePath": "_content/Paypal.NET",
   "Mode": "Default",
@@ -2108,6 +2108,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\BlackDeck.jpeg",
+      "SourceId": "Paypal.NET",
+      "SourceType": "Discovered",
+      "ContentRoot": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\",
+      "BasePath": "_content/Paypal.NET",
+      "RelativePath": "logo/BlackDeck.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\BlackDeck.jpeg"
+    },
+    {
       "Identity": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\DeckMaster.png",
       "SourceId": "Paypal.NET",
       "SourceType": "Discovered",
@@ -2140,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo\\DeckOfCards.png"
+    },
+    {
+      "Identity": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\FiveAces.jpg",
+      "SourceId": "Paypal.NET",
+      "SourceType": "Discovered",
+      "ContentRoot": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\",
+      "BasePath": "_content/Paypal.NET",
+      "RelativePath": "logo/FiveAces.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\FiveAces.jpg"
     },
     {
       "Identity": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\wwwroot\\logo\\PayPal.png",

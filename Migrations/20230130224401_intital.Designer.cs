@@ -11,8 +11,8 @@ using Paypal.NET.Data;
 namespace Paypal.NET.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230130183019_initial")]
-    partial class initial
+    [Migration("20230130224401_intital")]
+    partial class intital
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -337,7 +337,7 @@ namespace Paypal.NET.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
 
                     b.HasData(
                         new
@@ -367,6 +367,20 @@ namespace Paypal.NET.Migrations
                             Price = "7.79",
                             ProductName = "Black Deck"
                         });
+                });
+
+            modelBuilder.Entity("Paypal.NET.ViewModels.RoleVM", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RoleVM");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

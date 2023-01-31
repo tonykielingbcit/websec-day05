@@ -22,6 +22,7 @@ namespace Paypal.NET.Controllers
         public ActionResult Index()
         {
             RoleRepo roleRepo = new RoleRepo(_context);
+
             return View(roleRepo.GetAllRoles());
         }
 

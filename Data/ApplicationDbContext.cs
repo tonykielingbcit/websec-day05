@@ -10,7 +10,7 @@ namespace Paypal.NET.Data
     {
         public DbSet<IPN> IPNs { get; set; }
         public DbSet<MyRegisteredUser> MyRegisteredUsers { get; set; }
-        //public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :
                base(options)
