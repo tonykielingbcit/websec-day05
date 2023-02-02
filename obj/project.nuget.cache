@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zJy0hE+EoXhx7GbvJBrRP1AlkxEfigsi9J7dcm4cewHpWmSFHiqoIK1uZAhLleCNXInFw1aZJaJBkvZsCtNHhg==",
+  "dgSpecHash": "qaD0wgIat4P/lNp2d7K0x2dBANkSkysFmrwua8qDxmu7yjDjyacZIjyrIlXfS7mP7tFVctZylWyZY7x1dxqs+Q==",
   "success": true,
   "projectFilePath": "K:\\github-BCIT\\15-Web_Security\\day-04\\Paypal.NET\\Paypal.NET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tony\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.2\\microsoft.aspnetcore.authentication.jwtbearer.7.0.2.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.2\\microsoft.aspnetcore.cryptography.internal.7.0.2.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.2\\microsoft.aspnetcore.cryptography.keyderivation.7.0.2.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.2\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.2.nupkg.sha512",

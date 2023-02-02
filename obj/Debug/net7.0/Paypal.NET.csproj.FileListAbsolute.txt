@@ -620,3 +620,4 @@ K:\github-BCIT\15-Web_Security\day-04\Paypal.NET\obj\Debug\net7.0\refint\Paypal.
 K:\github-BCIT\15-Web_Security\day-04\Paypal.NET\obj\Debug\net7.0\Paypal.NET.pdb
 K:\github-BCIT\15-Web_Security\day-04\Paypal.NET\obj\Debug\net7.0\Paypal.NET.genruntimeconfig.cache
 K:\github-BCIT\15-Web_Security\day-04\Paypal.NET\obj\Debug\net7.0\ref\Paypal.NET.dll
+K:\github-BCIT\15-Web_Security\day-04\Paypal.NET\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

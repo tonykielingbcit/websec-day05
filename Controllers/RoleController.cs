@@ -34,8 +34,10 @@ namespace Paypal.NET.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(RoleVM addRole)
         {
+            var token = HttpContext.Request.Form["__RequestVerificationToken"];
             _roleRepo.CreateRole(addRole.RoleName);
 
             return RedirectToAction("Index", "Role");
